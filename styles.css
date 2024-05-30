@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    background: #333;
+    background: #333; /* تعديل هنا للون البرتقالي */
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -36,14 +36,14 @@ header .container {
 }
 
 header .logo img {
-    width: 100px; /* يمكنك تغيير القيمة لتصغير أو تكبير الشعار */
+    width: 100px;
     height: auto;
 }
 
 header nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-around; /* توزيع العناصر بالتساوي */
+    justify-content: space-around;
 }
 
 header nav ul li {
@@ -58,7 +58,7 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background: #555;
+    background: #555; /* تعديل هنا للون البرتقالي */
 }
 
 /* Hero Section */
@@ -86,7 +86,7 @@ header nav ul li a:hover {
 .hero .btn {
     display: inline-block;
     padding: 10px 20px;
-    background: #ff6f61;
+    background: #ff6f61; /* تعديل هنا للون البرتقالي */
     color: #fff;
     text-decoration: none;
     margin-top: 20px;
@@ -94,7 +94,7 @@ header nav ul li a:hover {
 }
 
 .hero .btn:hover {
-    background: #ff4f41;
+    background: #ff4f41; /* تعديل هنا للون البرتقالي الداكن */
 }
 
 /* About Section */
@@ -111,7 +111,7 @@ header nav ul li a:hover {
 .about p {
     font-size: 1.1em;
     line-height: 1.8;
-    color: #555;
+    color: #555; /* يمكن تعديل هنا للون الأزرق */
 }
 
 /* Services Section */
@@ -127,7 +127,7 @@ header nav ul li a:hover {
 }
 
 .services .service {
-    background: #fff;
+    background: #fff; /* يمكن ترك هذا كما هو أو تغييره حسب التصميم */
     padding: 20px;
     margin: 10px;
     text-align: center;
@@ -143,11 +143,12 @@ header nav ul li a:hover {
 
 .services h3 {
     margin-bottom: 10px;
+    color: #333; /* يمكن تعديل هنا للون الأزرق */
 }
 
 .services p {
     font-size: 1em;
-    color: #555;
+    color: #555; /* يمكن تعديل هنا للون الأزرق */
 }
 
 /* Contact Section */
@@ -181,7 +182,7 @@ header nav ul li a:hover {
 
 .contact button {
     padding: 10px 20px;
-    background: #ff6f61;
+    background: #ff6f61; /* تعديل هنا للون البرتقالي */
     color: #fff;
     border: none;
     cursor: pointer;
@@ -189,12 +190,12 @@ header nav ul li a:hover {
 }
 
 .contact button:hover {
-    background: #ff4f41;
+    background: #ff4f41; /* تعديل هنا للون البرتقالي الداكن */
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #333; /* تعديل هنا للون البرتقالي الداكن أو الأزرق */
     color: #fff;
     text-align: center;
     padding: 20px 0;
