@@ -36,8 +36,8 @@ header .container {
 }
 
 header .logo img {
-    width: 150px;
-    height: auto;
+    width: 150px; /* تأكد من وجود هذه القاعدة */
+    height: auto; /* تأكد من وجود هذه القاعدة */
 }
 
 header nav ul {
