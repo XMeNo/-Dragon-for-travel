@@ -36,7 +36,7 @@ header .container {
 }
 
 header .logo img {
-    width: 100px; /* Adjusted size */
+    width: 100px;
     height: auto;
 }
 
@@ -53,7 +53,7 @@ header nav ul li a {
     color: #fff;
     text-decoration: none;
     padding: 5px 10px;
-    transition: background 0.3s, color 0.3s; /* Added color transition */
+    transition: background 0.3s, color 0.3s;
 }
 
 header nav ul li a:hover {
@@ -66,8 +66,8 @@ header nav ul li a:hover {
     height: 100vh;
     color: #fff;
     text-align: center;
-    margin-top: 60px; /* To account for the fixed header */
-    background-color: #f9f9f9; /* Added background color */
+    margin-top: 60px;
+    background-color: #f9f9f9;
 }
 
 .hero-content {
@@ -126,12 +126,12 @@ header nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     margin-top: 20px;
-    transition: background 0.3s, transform 0.3s; /* Added transform transition */
+    transition: background 0.3s, transform 0.3s;
 }
 
 .hero .btn:hover {
     background: #ff4f41;
-    transform: scale(1.1); /* Added scale effect on hover */
+    transform: scale(1.1);
 }
 
 /* About Section */
@@ -163,41 +163,65 @@ header nav ul li a:hover {
     flex-wrap: wrap;
 }
 
-.service-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.service {
-    width: calc(50% - 20px); /* Adjust the width as needed */
-    margin: 20px;
+.services .service {
+    position: relative; /* إضافة تحديد الموضع للخدمة */
+    background: #fff;
     padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    margin: 10px;
     text-align: center;
+    flex: 1 1 calc(45% - 20px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
 
-.service img {
+.services .service img {
     width: 100%;
     height: auto;
+    margin-bottom: 20px;
+}
+
+.services .service h3 {
     margin-bottom: 10px;
 }
 
-.service h3 {
-    margin-bottom: 10px;
-    font-size: 1.5em;
-}
-
-.service p {
+.services .service p {
     font-size: 1em;
     color: #555;
 }
 
-.service:hover {
+.services .service:hover {
     transform: translateY(-5px);
+}
+
+.services .service::after {
+    content: "Boat Trips"; /* إضافة الكلمة */
+    position: absolute; /* تحديد الموقع */
+    bottom: 0; /* توجيهها للأسفل */
+    left: 0; /* تحديد الموقع من اليسار */
+    width: 100%; /* تمتد لتغطية العرض بالكامل */
+    height: 30px; /* ارتفاع الخلفية التدرجية */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%); /* تعيين الخلفية التدرجية */
+}
+
+.services .prev,
+.services .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.5);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.services .prev {
+    left: 0;
+}
+
+.services .next {
+    right: 0;
 }
 
 /* Contact Section */
@@ -223,12 +247,12 @@ header nav ul li a:hover {
     color: #fff;
     text-decoration: none;
     margin-top: 20px;
-    transition: background 0.3s, transform 0.3s; /* Added transform transition */
+    transition: background 0.3s, transform 0.3s;
 }
 
 .contact .btn:hover {
     background: #ff4f41;
-    transform: scale(1.1); /* Added scale effect on hover */
+    transform: scale(1.1);
 }
 
 /* WhatsApp Button */
@@ -245,7 +269,7 @@ header nav ul li a:hover {
     align-items: center;
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     z-index: 1000;
-    transition: background 0.3s, transform 0.3s; /* Added transform transition */
+    transition: background 0.3s, transform 0.3s;
 }
 
 .whatsapp-button img {
@@ -254,8 +278,8 @@ header nav ul li a:hover {
 }
 
 .whatsapp-button:hover {
-    background: #128c7e; /* Adjusted hover background color */
-    transform: scale(1.1); /* Added scale effect on hover */
+    background: #128c7e;
+    transform: scale(1.1);
 }
 
 /* Footer */
